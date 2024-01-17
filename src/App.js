@@ -3,10 +3,9 @@ import "./App.css"
 import Header from "./components/common/heading/Header"
    
 
-import { createRoot } from "react-dom/client";
 import {
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter as Router,
+  Switch,
   Route,
   Link,
 } from "react-router-dom";
@@ -17,6 +16,13 @@ const App = () => {
     <>
 
     <Header/>
+    <Router>
+
+    <Switch>
+      
+      </Switch>
+  
+    </Router>
     </>
   )
 }

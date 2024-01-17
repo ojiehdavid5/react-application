@@ -13,3 +13,13 @@ body{
   font-family: 'Roboto', sans-serif;
 
 }
+
+.container{
+  max-width: 80%;
+}
+
+
+.flexSB{
+  display:flex;
+  justify-content: space-between;
+}
