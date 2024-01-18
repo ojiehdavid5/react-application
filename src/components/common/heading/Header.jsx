@@ -1,14 +1,19 @@
 import React from 'react'
 import Head from './Head'
+import {useState} from 'react'
+
 import "./Header.css"
-import { Link } from "react-router-dom "
-const header = () => {
+import { Link } from "react-router-dom" 
+const Header = () => {
+  const [click,setClick]=useState(false);
+
   return (
+
     <div>
       <Head/>
       <header>
         <nav className='flexSB'>
-          <ul>
+        <ul className={click ? "mobile-nav" : "flexSB"} onClick={() => setClick(false)}>
             <li> <Link to="/">Home</Link></li>
             <li> <Link to="/courses">All courses</Link></li>
             <li> <Link to="/About">About</Link></li>
@@ -22,10 +27,14 @@ const header = () => {
 
             <div className="button">GET CERTIFICATE</div>
           </div>
+          <button className="toggle"  onClick={() => setClick(!click)}></button>
+          {click?<i className='fab fa-times'></i>:<i className='fab fa-bars'></i>
+ }
+
         </nav>
       </header>
     </div>
   )
 }
 
-export default header
+export default Header
