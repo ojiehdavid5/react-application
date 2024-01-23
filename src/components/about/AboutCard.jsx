@@ -3,10 +3,19 @@ import React from 'react'
 const AboutCard = () => {
   return (
     <>
-    <h1>About card</h1>
+
+    <section className="aboutHome">
+
+      <div className="container flexSB">
+        <div className="left row">
+<img src= './images/about.webp' alt="" />          
+          </div> 
+      </div>
+    </section>
       
     </>
   )
 }
 
 export default AboutCard
+

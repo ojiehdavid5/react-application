@@ -142,6 +142,10 @@ p{
 .back h2{
   font-weight: 500;
   font-size: 17px;
+  text-transform: uppercase;
+}
+.margin{
+  margin-top: 403%;
 }
 
 @media screen and(max-screen:768px) {
