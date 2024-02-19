@@ -117,7 +117,7 @@ p{
 
 
 .back{
-  background: url('../images/back.webp');
+  background: url('../public/images/back.webp');
     background-size:cover;
     background-attachment:fixed;
     position:absolute;
@@ -145,7 +145,7 @@ p{
   text-transform: uppercase;
 }
 .margin{
-  margin-top: 403%;
+  margin-top: 40.3%;
 }
 
 @media screen and(max-screen:768px) {
