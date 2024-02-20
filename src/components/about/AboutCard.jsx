@@ -2,6 +2,7 @@ import React from "react";
 import Title from   "../common/title/Title"
 import { homeAbout } from "../../dummydata"
 import AWrapper from "./AWrapper";
+import "./About.css"
 
 
 
@@ -18,7 +19,7 @@ const AboutCard = () => {
 
             <Title subtitle='LEARN ANYTHING'   title="benefit About online learning"/>
             <div className="items">{homeAbout.map((val)=>(
-              <div className="items flexSB">
+              <div className="item flexSB">
                 <div className="img">
                   <img src={val.cover} alt=""/>
                 </div>
