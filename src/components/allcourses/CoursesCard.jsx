@@ -1,11 +1,15 @@
 import React from 'react'
+import './courses.css'
+
+import { coursesCard } from '../../dummydata'
+
 
 const CoursesCard = () => {
   return (
     <div>
         <section className="courseCard">
             <div className="container grid2">
-                {CoursesCard.map((val)=>{
+                {coursesCard.map((val)=>{
                     return(
                     <div className="items">
                         <div className="content flex">
@@ -25,6 +29,24 @@ const CoursesCard = () => {
                                 <i className='fa fa-star'></i>
                                 <i className='fa fa-star'></i>
                                 <label htmlFor="">(5.0)</label>
+                                </div>
+                                <div className="details">
+                                    
+                                    {val.courTeacher.map((details)=>(
+                                        <>
+                                        <div className="box">
+                                            <div className="dimg">
+                                                <img src={details.dcover} alt=""/>
+                                            </div>
+                                            <div className="para">
+                                                <h4>{details.name}</h4>
+                                            </div>
+                                        </div>
+                                        <span>{details.totalTime}</span>
+                                        </>
+                                    )
+
+                                    )}
                                 </div>
                             </div>
                             </div> 
