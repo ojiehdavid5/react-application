@@ -39,3 +39,23 @@
     font-size: 20px;
     
 }
+.team .details p{
+    font-size: 15px;
+    color: grey;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.team .items:hover{
+    background-color: #1eb2ae;
+    color: #fff;
+    cursor: pointer;
+
+}
+.team .items:hover p{
+    color: #fff;
+
+
+}
+.team .items:hover .overlay{
+    opacity:1 ;
+}

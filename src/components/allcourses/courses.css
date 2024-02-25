@@ -43,7 +43,7 @@ text-align: left;
     margin-right: 5px;
 
 }
-.coursesCard .details .dimg img{
+.coursesCard .details  .box .dimg img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
