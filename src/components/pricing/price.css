@@ -29,7 +29,19 @@
 }
 .faq button{
     padding: 0;
-    /* margin:0; */
+    margin:0;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
 
+
+}
+
+.faq h2{
+    font-weight: 500;
+}
+.faq p{
+    padding: 20px;
 }
 
