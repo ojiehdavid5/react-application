@@ -1,11 +1,16 @@
 import React from 'react'
-import { blog } from "../../dummydata"
-import "./blog.css"
+import Title from "../title/Title"
+import { blog } from "../../../dummydata"
 
-const BlogCard = () => {
+
+const Hblog = () => {
   return (
     <>
-    { blog.map((val)=>(
+    <section className="blog">
+        <div className="container">
+            <Title subtitle="Our Blog" title="recent from blog"/>
+            <div className="grid2">
+            { blog.slice(0,3).map((val)=>(
       <div className="items shadow">
         <div className="img">
           <img src={val.cover} alt=""/>
@@ -35,9 +40,16 @@ const BlogCard = () => {
 
       </div>
     ))}
+
+            </div>
+
+
+        </div>
+
+    </section>
       
     </>
   )
 }
 
-export default BlogCard
+export default Hblog
