@@ -1,5 +1,6 @@
 import React from 'react'
-import PriceCard from "../pricing/PriceCard"
+import PriceCard from "../../../pricing/PriceCard"
+import Title from "../../title/Title"
 
 const Hprice = () => {
     return(

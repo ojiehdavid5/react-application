@@ -8,6 +8,8 @@ import Team from "./components/team/Team"
 import price from "./components/pricing/price"
 import Blog from  "./components/blog/Blog"
 
+import Contact from "./components/contact/Contact"
+
 
 import {
   BrowserRouter as Router,
@@ -33,6 +35,7 @@ const App = () => {
       <Route path='/team'   exact component={Team} />      
       <Route path='/pricing'   exact component={price} />      
       <Route path='/journal'   exact component={Blog} />      
+      <Route path='/contact'   exact component={Contact} />      
       </Switch>
   
     </Router>
