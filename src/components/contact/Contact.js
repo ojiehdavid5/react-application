@@ -1,4 +1,5 @@
 import React from 'react'
+import './contact.css'
  import Back from "../common/back/Back"
 
 
@@ -26,7 +27,27 @@ const Contact = () => {
                   <h4>EMAIL:</h4>
                   <p>ojiehdavid5@gmail.com</p>
                 </div>
+                <div className='box'>
+                  <h4>PHONE:</h4>
+                  <p>09047247836</p>
+                </div>
               </div>
+              <form action=''>
+                <div className='flexSB'>
+                  <input type='name' placeholder='Enter your name'/>
+                  <input type='email' placeholder='Enter your Email'/>
+
+                </div>
+                                  <input type='email' placeholder='Subject'/>
+                                  <textarea cols='30' rows='10' >
+                                    Create a message ...
+
+                                  </textarea>
+                                  <button className='primary-btn'>SEND A MESSAGE</button>
+
+              </form>
+              <h3>Follow us here</h3>
+              <span>FACEBOOK INSTAGRAM TWITTER DRIBBLE</span>
             </div>
         </div>
     </section>
@@ -36,3 +57,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+

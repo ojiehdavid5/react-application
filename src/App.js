@@ -7,6 +7,7 @@ import CourseHome from "./components/allcourses/CourseHome"
 import Team from "./components/team/Team"
 import price from "./components/pricing/price"
 import Blog from  "./components/blog/Blog"
+import Footer from "./components/common/footer/Footer"
 
 import Contact from "./components/contact/Contact"
 
@@ -37,6 +38,7 @@ const App = () => {
       <Route path='/journal'   exact component={Blog} />      
       <Route path='/contact'   exact component={Contact} />      
       </Switch>
+      <Footer/>
   
     </Router>
     </>
