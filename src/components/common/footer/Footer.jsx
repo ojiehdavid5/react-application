@@ -50,13 +50,48 @@ const Footer = () => {
                 <img src={val.cover} alt=''/>
             </div>
             <div className="text">
-                <span></span>
+                
+
+
+                <span>
+              <i className="fa fa-user"></i>
+              <label htmlfor="">{val.type}</label>
+            </span>
+            <span>
+              <i className="fa fa-calendar-alt"></i>
+              <label htmlfor="">{val.date}</label>
+            </span>
+            <h4>{val.title}</h4>
+
+            
             </div>
         </div>
     )})}
 </div>
+<div className="box last">
+    <h3>Have a question?</h3>
+    <ul>
+        <l1>
+            <i className='fa fa-map'></i>
+            29,muri folami ogudu G.R.A lagos
+        </l1>
+        <li>
+            <i className='fa fa-phone-alt'></i>
+            09047247836
+
+        </li>
+        <li>
+            <i className='fa fa-paper-plane'></i>
+            ojiehdavid5@gmail.com
+            
+        </li>
+    </ul>
+</div>
         </div>
     </footer>
+    <div className="legal">
+        <p>Copyright @2022 All Right Reserved</p>
+    </div>
     </>
   )
 }
